@@ -1,3 +1,3 @@
 #!/bin/bash
 
-sudo pacman -Sy i3 i3status
+sudo pacman -Sy i3 i3status compton

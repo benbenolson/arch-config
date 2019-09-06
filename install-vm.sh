@@ -7,7 +7,6 @@ sudo systemctl start vboxservice.service
 
 # Make the VirtualBox services start on startup
 sudo pacman -Sy --needed dex
-read -p "Now add the line 'exec dex /etc/xdg/autostart/vboxclient.desktop' to this file."
 echo "exec dex /etc/xdg/autostart/vboxclient.desktop" >> ~/.config/i3/config
 
 # Fix resolution, change to some other resolution if you want

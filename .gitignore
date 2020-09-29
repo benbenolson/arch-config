@@ -1,0 +1,11 @@
+*
+
+!.gitignore
+
+!.config
+!.config/i3
+!.config/fontconfig
+
+!src
+!src/suckless
+!src/suckless/st

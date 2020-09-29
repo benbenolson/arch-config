@@ -1,0 +1,3 @@
+[submodule "src/suckless/st"]
+	path = src/suckless/st
+	url = https://git.suckless.org/st

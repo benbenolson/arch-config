@@ -5,6 +5,7 @@
 !.config
 !.config/i3
 !.config/fontconfig
+!.config/fontconfig/fonts.conf
 !.config/gtk-3.0
 !.config/gtk-3.0/settings.ini
 

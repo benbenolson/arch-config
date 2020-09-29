@@ -5,6 +5,8 @@
 !.config
 !.config/i3
 !.config/fontconfig
+!.config/gtk-3.0
+!.config/gtk-3.0/settings.ini
 
 !src
 !src/suckless

@@ -186,7 +186,6 @@ gaps outer 10
 #gaps bottom 5
 #gaps left 5
 
-exec compton
 exec nm-applet
 exec pasystray
 exec feh --bg-fill /home/macslayer/images/wallpaper.jpg

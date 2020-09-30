@@ -1,5 +1,7 @@
 #!/bin/bash
 
+BASEDIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+
 sudo pacman -Sy --needed xorg-server \
 	lightdm \
 	lightdm-gtk-greeter \
@@ -16,14 +18,7 @@ sudo pacman -Sy --needed xorg-server \
 
 # Configure LightDM
 sudo systemctl enable lightdm.service
-sudo cp etc/lightdm/lightdm.conf /etc/lightdm/lightdm.conf
 
-# Configure i3
-mkdir -p ~/.config/i3
-cp .config/i3/config ~/.config/i3
-
-# Configure kitty
-mkdir -p ~/.config/kitty
-cp .config/kitty/kitty.conf ~/.config/kitty/kitty.conf
-
-cp .vimrc ~
+cd ${BASEDIR}/src/suckless/st
+make
+sudo make install

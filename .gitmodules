@@ -1,3 +1,6 @@
 [submodule "src/suckless/st"]
 	path = src/suckless/st
 	url = https://git.suckless.org/st
+[submodule "src/yed"]
+	path = src/yed
+	url = https://github.com/kammerdienerb/yed.git

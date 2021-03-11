@@ -16,3 +16,6 @@
 !src/suckless
 !src/suckless/st
 !src/yed
+
+!.yed
+!.yed/init.c

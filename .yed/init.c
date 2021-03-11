@@ -179,17 +179,17 @@ int yed_plugin_boot(yed_plugin *self) {
       YEXE("set", "tab-width", "2");
 
       /* Commands */
-      YEXE("vimish-bind", "normal", ">", "CMD", "indent");
-      YEXE("vimish-bind", "normal", "<",  "CMD", "unindent");
-      YEXE("vimish-bind", "normal", "M", "M", "CMD", "man-word");
-      YEXE("vimish-bind", "normal", "spc", "g", "CMD", "grep");
-      YEXE("vimish-bind", "normal", "spc", "f", "CMD", "find-file");
-      YEXE("vimish-bind", "normal", "L", "L", "CMD", "fill-command-prompt", "cursor-line");
-      YEXE("vimish-bind", "normal", "spc", "c", "CMD", "comment-toggle");
-      YEXE("vimish-bind", "normal", "spc", "v", "s", "p", "CMD", "frame-vsplit");
-      YEXE("vimish-bind", "normal", "spc", "h", "s", "p", "CMD", "frame-hsplit");
-      YEXE("vimish-bind", "normal", "ctrl-h", "CMD", "frame-prev");
-      YEXE("vimish-bind", "normal", "ctrl-l", "CMD", "frame-next");
+      YEXE("vimish-bind", "normal", ">", "indent");
+      YEXE("vimish-bind", "normal", "<",  "unindent");
+      YEXE("vimish-bind", "normal", "M M", "man-word");
+      YEXE("vimish-bind", "normal", "spc g", "grep");
+      YEXE("vimish-bind", "normal", "spc f", "find-file");
+      YEXE("vimish-bind", "normal", "L L", "fill-command-prompt", "cursor-line");
+      YEXE("vimish-bind", "normal", "spc c", "comment-toggle");
+      YEXE("vimish-bind", "normal", "spc v s p", "frame-vsplit");
+      YEXE("vimish-bind", "normal", "spc h s p", "frame-hsplit");
+      YEXE("vimish-bind", "normal", "ctrl-h", "frame-prev");
+      YEXE("vimish-bind", "normal", "ctrl-l", "frame-next");
 
       /* Load a local .yedrc. */
       YEXE("yedrc-load", ".yedrc");

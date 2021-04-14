@@ -185,7 +185,7 @@ int yed_plugin_boot(yed_plugin *self) {
       YEXE("vimish-bind", "normal", "M M", "man-word");
       YEXE("vimish-bind", "normal", "spc g", "grep");
       YEXE("vimish-bind", "normal", "spc f", "find-file");
-      YEXE("vimish-bind", "normal", "L L", "command-prompt", "cursor-line");
+      YEXE("vimish-bind", "normal", "L L", "command-prompt", "cursor-line ");
       YEXE("vimish-bind", "normal", "spc c", "comment-toggle");
       YEXE("vimish-bind", "normal", "spc v s p", "frame-vsplit");
       YEXE("vimish-bind", "normal", "spc h s p", "frame-hsplit");

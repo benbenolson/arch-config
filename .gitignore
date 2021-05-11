@@ -2,8 +2,7 @@
 
 !.gitignore
 !install.sh
-!install-gui.sh
-!install-vm.sh
+!install-user.sh
 
 !.config
 !.config/i3

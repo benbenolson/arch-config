@@ -2,11 +2,17 @@
 
 BASEDIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 
-# Install software
+# Copy source code
 mkdir -p ${HOME}/src
 cp -r src/* ${HOME}/src/
+
+# Install yed
 cd ${HOME}/src/yed
 ./clean.sh && ./build.sh && sudo ./install.sh
+mkdir -p ${HOME}/.yed
+cp ${BASEDIR}/.yed/init.c ${HOME}/.yed/
+cd ${HOME}/.yed
+gcc -shared -fPIC -g -O3 init.c -lyed -o init.so
 
 # I3 WINDOW MANAGER
 mkdir -p $HOME/.config/i3/
@@ -20,12 +26,6 @@ cp ${BASEDIR}/.config/fontconfig/fonts.conf ${HOME}/.config/fontconfig/fonts.con
 mkdir -p ${HOME}/.local/share/
 cp -r ${BASEDIR}/.local/share/fonts ${HOME}/.local/share/
 fc-cache -fv
-
-# YED CONFIG
-mkdir -p ${HOME}/.yed
-cp ${BASEDIR}/.yed/init.c ${HOME}/.yed/
-cd ${HOME}/.yed
-gcc -shared -fPIC -g -O3 init.c -lyed -o init.so
 
 # Install GUI software
 sudo pacman -Sy --needed xorg-server \

@@ -3,6 +3,7 @@
 !.gitignore
 !install.sh
 !install-user.sh
+!install-yed.sh
 
 !.config
 !.config/i3

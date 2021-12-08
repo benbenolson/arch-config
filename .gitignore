@@ -13,6 +13,7 @@
 !.config/gtk-3.0/settings.ini
 !.config/yed/
 !.config/yed/yedrc
+!.config/yed/ypm_list
 
 !src
 !src/suckless

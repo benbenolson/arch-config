@@ -1,0 +1,23 @@
+set truecolor yes
+plugin-load 'ypm'
+style zulu
+
+# Indentation
+set tab-width 2
+vimish-bind normal > indent
+vimish-bind normal < unindent
+
+# Power utils
+vimish-bind normal "spc m" man-word
+vimish-bind normal "spc g" grep
+vimish-bind normal "spc f" find-file
+vimish-bind normal "spc w" word-wrap 80
+vimish-bind normal "spc c" comment-toggle
+vimish-bind normal "spc l" command-prompt "cursor-line "
+
+# Frame management
+vimish-bind normal "spc v s p" frame-vsplit
+vimish-bind normal "spc h s p" frame-hsplit
+vimish-bind normal "ctrl-l" frame-next
+
+yedrc-load .yedrc

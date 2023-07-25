@@ -14,10 +14,13 @@ vimish-bind normal "spc f" find-file
 vimish-bind normal "spc w" word-wrap 80
 vimish-bind normal "spc c" comment-toggle
 vimish-bind normal "spc l" command-prompt "cursor-line "
+vimish-bind  normal  "t t" multi jump-stack-push ctags-jump-to-definition
+vimish-bind  normal  "bsp" jump-stack-pop
 
 # Frame management
 vimish-bind normal "spc v s p" frame-vsplit
 vimish-bind normal "spc h s p" frame-hsplit
 vimish-bind normal "ctrl-l" frame-next
+
 
 yedrc-load .yedrc
